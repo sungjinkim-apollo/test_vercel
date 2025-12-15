@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>백돌이 이완희 화이팅.</title>
+  <meta charset="UTF-8" />
+  <title>Green Fairway Golf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #0b3d2e;
+      color: #ffffff;
+    }
+
+    header {
+      background: linear-gradient(to right, #0b3d2e, #1e7f5c);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      opacity: 0.9;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #145a43;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #ffffff;
+      color: #0b3d2e;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <h1>백돌이 이완희 화이팅</h1>
-    <p>자 완희형의 새로운 시작을 위해서 !!.</p>
+
+  <header>
+    <h1>⛳ Green Fairway Golf</h1>
+    <p>골프를 더 즐겁게, 더 심플하게</p>
+    <a class="btn" href="#tips">골프 팁 보기</a>
+  </header>
+
+  <section id="tips">
+    <h2>🏌️ 골프 기본 팁</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>드라이버</h3>
+        <p>힘보다는 리듬. 스윙 템포를 일정하게 유지하세요.</p>
+      </div>
+      <div class="card">
+        <h3>아이언</h3>
+        <p>공을 찍는 느낌으로 정확한 임팩트를 만들어 보세요.</p>
+      </div>
+      <div class="card">
+        <h3>퍼팅</h3>
+        <p>라인 읽기가 절반입니다. 스트로크는 단순하게.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🌿 About</h2>
+    <p>
+      Green Fairway Golf는 골프를 사랑하는 사람들을 위한
+      미니멀한 골프 정보 사이트입니다.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Green Fairway Golf · Built for Vercel
+  </footer>
+
 </body>
 </html>
