@@ -1,112 +1,60 @@
+
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <title> 이완희의 백돌이 탈출을 위한 골프교실 </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background-color: #0b3d2e;
-      color: #ffffff;
-    }
-
-    header {
-      background: linear-gradient(to right, #0b3d2e, #1e7f5c);
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      opacity: 0.9;
-      font-size: 1.1rem;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background-color: #145a43;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
-
-    .card h3 {
-      margin-top: 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9rem;
-      opacity: 0.7;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #ffffff;
-      color: #0b3d2e;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apollo Studio | F-1 AI Game Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #000000;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+      .mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      /* Custom selection color */
+      ::selection {
+        background: #ffffff;
+        color: #000000;
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      html {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      .animate-float {
+        animation: float 4s ease-in-out infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
-<body>
-
-  <header>
-    <h1>⛳ 이완희의 백돌이 탈출을 위한 골프교실 ⛳ </h1>
-    <p>골프를 더 즐겁게, 더 심플하게</p>
-    <a class="btn" href="#tips">골프 팁 보기</a>
-  </header>
-
-  <section id="tips">
-    <h2>🏌️ 골프 기본 팁</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>드라이버</h3>
-        <p>힘보다는 리듬. 스윙 템포를 일정하게 유지하세요.</p>
-      </div>
-      <div class="card">
-        <h3>아이언</h3>
-        <p>공을 찍는 느낌으로 정확한 임팩트를 만들어 보세요.</p>
-      </div>
-      <div class="card">
-        <h3>퍼팅</h3>
-        <p>라인 읽기가 절반입니다. 스트로크는 단순하게.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>🌿 About</h2>
-    <p>
-      Green Fairway Golf는 골프를 사랑하는 사람들을 위한
-      미니멀한 골프 정보 사이트입니다.
-    </p>
-  </section>
-
-  <footer>
-    © 2025 Green Fairway Golf · Built for Vercel
-  </footer>
-
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
