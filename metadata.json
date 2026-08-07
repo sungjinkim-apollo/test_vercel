@@ -1,5 +1,6 @@
-
 {
-  "name": "Apollo Studio - The AI Game Engine",
-  "description": "A high-end, modern, and cosmic-themed landing page for Apollo Studio, featuring the F-1 AI Game Engine with star-inspired aesthetics and motion design."
+  "name": "Poke-Stock Gacha",
+  "description": "Mobile-optimized prototype for a Card Gacha and Direct Stock Trading game.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
